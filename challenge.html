@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="test.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge</title>
   </head>
   <body>
     <h1>Create An Account</h1>
+
     <form>
-      <input required type="text" placeholder="First name" />
-      <input required type="text" placeholder="Last name" />
-      <input required type="text" placeholder="Email" />
-      <input required type="text" placeholder="Username" />
-      <input required type="password" minlength="10" placeholder="Password" />
-      <input required type="date" />
-      <input required type="color" />
-      <input required type="range" />
-      <input required type="submit" value="Create Account" />
+      <label for="first-name">First name</label>
+      <input id="first-name" required type="text" placeholder="First name" />
     </form>
+    <form>
+      <label for="last-name">Last name</label>
+      <input id="last-name" required type="text" placeholder="Last name" />
+    </form>
+    <form>
+      <label for="email">Email</label>
+      <input id="email" required type="email" placeholder="Email" />
+    </form>
+    <form>
+      <label for="username">Username</label>
+      <input id="username" required type="text" placeholder="Username" />
+    </form>
+    <form>
+      <label for="password">Password</label>
+      <input
+        id="password"
+        required
+        type="password"
+        minlength="10"
+        placeholder="Password"
+      />
+    </form>
+    <form>
+      <label for="birth-date">Birth date</label>
+      <input id="birth-date" required type="date" />
+    </form>
+    <form>
+      <label for="happy-range">How happy are you?</label>
+      <input id="happy-range" required type="range" />
+    </form>
+    <form>
+      <label for="fav-color">What is your fav. color?</label>
+      <input id="fav-color" required type="color" />
+    </form>
+    <form><input required type="submit" value="Create Account" /></form>
   </body>
 </html>
